@@ -20,6 +20,10 @@ Com essa análise e alguns testes, se teve a conclusão final que o modelo **gem
 - API Key do Google Gemini AI
 - Git
 
+## 📋 Acesso Remoto - Deploy
+
+https://desafio-escribo-2.vercel.app
+
 ## 🛠️ Instalação
 
 ### 1. Clone o repositório

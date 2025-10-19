@@ -25,7 +25,7 @@ Com essa análise e alguns testes, se teve a conclusão final que o modelo **gem
 ### 1. Clone o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/lsguilherme/desafio-escribo-2.git
 cd escribo
 ```
 

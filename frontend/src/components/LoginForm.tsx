@@ -3,10 +3,9 @@ import { supabase } from '../lib/supabase'
 
 interface LoginFormProps {
   onToggleMode: () => void
-  onLogin: () => void
 }
 
-export default function LoginForm({ onToggleMode, onLogin }: LoginFormProps) {
+export default function LoginForm({ onToggleMode }: LoginFormProps) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
@@ -16,7 +15,7 @@ export default function LoginForm({ onToggleMode, onLogin }: LoginFormProps) {
     
     setLoading(true)
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
+      const { error } = await supabase.auth.signInWithPassword({
         email,
         password
       })

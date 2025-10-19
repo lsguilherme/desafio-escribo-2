@@ -42,7 +42,7 @@ export default function PresentationForm({ onLogout, onSuccess }: PresentationFo
       }
     } catch (error) {
       console.error('Catch Error:', error)
-      alert('Erro ao gerar apresentação: ' + error.message)
+      alert('Erro ao gerar apresentação: ' + (error as Error).message)
     } finally {
       setLoading(false)
     }

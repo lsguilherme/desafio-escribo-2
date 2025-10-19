@@ -8,7 +8,7 @@ interface Lesson {
   tema: string
   publico_alvo: string
   duracao: string
-  created_at: string
+  data_geracao: string
 }
 
 interface DashboardProps {
@@ -131,7 +131,7 @@ export default function Dashboard({ onLogout }: DashboardProps) {
             </div>
           ) : (
             <div className="divide-y divide-gray-100">
-              {lessons.map((lesson, index) => (
+              {lessons.map((lesson) => (
                 <div key={lesson.id} className="p-6 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-200 group">
                   <div className="flex justify-between items-start">
                     <div className="flex-1">
